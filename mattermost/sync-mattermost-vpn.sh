@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# This script will rsync the Mattermost instance on Borluutstraat servers with the instance on UGent servers
+# For use not in the Borluutstraat LAN through VPN.
+
 if pgrep tailscaled &>/dev/null; then
 	echo "Tailscaled is running, continue...";
 else 
